@@ -77,7 +77,9 @@ function App() {
     <LanguageProvider>
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router>
+        {/* basename tells React Router the app is served from a subpath
+            (e.g. /AndalePoultry/ on GitHub Pages) instead of the domain root. */}
+        <Router basename={import.meta.env.BASE_URL}>
           <AuthenticatedApp />
         </Router>
         <Toaster />
