@@ -1,5 +1,5 @@
 {
-  "name": "PoultryGestion",
+  "name": "Andale Poultry",
   "site": {
     "installCommand": "npm install",
     "buildCommand": "npm run build",

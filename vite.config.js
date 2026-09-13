@@ -4,6 +4,9 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Lets the GitHub Actions workflow set the correct base path for GitHub Pages
+  // (e.g. "/your-repo-name/") at build time, without hardcoding it here.
+  base: process.env.VITE_BASE_PATH || '/',
   logLevel: 'error', // Suppress warnings, only show errors
   plugins: [
     base44({
