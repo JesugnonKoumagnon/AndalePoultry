@@ -1,0 +1,81 @@
+{
+  "name": "Bande",
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string",
+      "description": "Nom de la bande (ex: Bande 1, Pondeuses Mars 2026)"
+    },
+    "espece": {
+      "type": "string",
+      "enum": [
+        "poulet_chair",
+        "pondeuse",
+        "pintade",
+        "canard",
+        "dinde",
+        "caille"
+      ],
+      "description": "Type de volaille"
+    },
+    "souche": {
+      "type": "string",
+      "description": "Souche de la volaille (ex: Cobb 500, Ross 308, Isa Brown...)"
+    },
+    "effectif_initial": {
+      "type": "number",
+      "description": "Nombre de sujets \u00e0 l'entr\u00e9e"
+    },
+    "effectif_actuel": {
+      "type": "number",
+      "description": "Nombre de sujets actuels"
+    },
+    "date_entree": {
+      "type": "string",
+      "format": "date",
+      "description": "Date d'entr\u00e9e de la bande"
+    },
+    "date_sortie": {
+      "type": "string",
+      "format": "date",
+      "description": "Date de sortie pr\u00e9vue"
+    },
+    "statut": {
+      "type": "string",
+      "enum": [
+        "active",
+        "terminee",
+        "planifiee"
+      ],
+      "default": "active",
+      "description": "Statut de la bande"
+    },
+    "poids_moyen_kg": {
+      "type": "number",
+      "description": "Poids moyen en kg"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notes suppl\u00e9mentaires"
+    }
+  },
+  "required": [
+    "nom",
+    "espece",
+    "effectif_initial"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

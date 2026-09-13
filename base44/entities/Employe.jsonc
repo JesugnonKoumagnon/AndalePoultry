@@ -1,0 +1,70 @@
+{
+  "name": "Employe",
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string",
+      "description": "Nom complet de l'employ\u00e9"
+    },
+    "poste": {
+      "type": "string",
+      "enum": [
+        "promoteur",
+        "eleveur",
+        "bascourier",
+        "veterinaire",
+        "technicien",
+        "comptable",
+        "chauffeur",
+        "gardien",
+        "autre"
+      ],
+      "description": "Poste occup\u00e9"
+    },
+    "telephone": {
+      "type": "string",
+      "description": "Num\u00e9ro de t\u00e9l\u00e9phone"
+    },
+    "salaire_mensuel": {
+      "type": "number",
+      "description": "Salaire mensuel en FCFA"
+    },
+    "date_embauche": {
+      "type": "string",
+      "format": "date",
+      "description": "Date d'embauche"
+    },
+    "statut": {
+      "type": "string",
+      "enum": [
+        "actif",
+        "inactif",
+        "conge"
+      ],
+      "default": "actif",
+      "description": "Statut de l'employ\u00e9"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notes suppl\u00e9mentaires"
+    }
+  },
+  "required": [
+    "nom",
+    "poste"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

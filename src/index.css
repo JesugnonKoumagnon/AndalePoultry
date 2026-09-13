@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Source Sans 3', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --background: 90 20% 97%;
+    --foreground: 150 30% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 30% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 30% 10%;
+    --primary: 145 55% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 90% 55%;
+    --secondary-foreground: 30 50% 15%;
+    --muted: 90 15% 93%;
+    --muted-foreground: 150 10% 45%;
+    --accent: 145 30% 92%;
+    --accent-foreground: 145 55% 25%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 90 15% 88%;
+    --input: 90 15% 88%;
+    --ring: 145 55% 36%;
+    --chart-1: 145 55% 36%;
+    --chart-2: 42 90% 55%;
+    --chart-3: 200 70% 50%;
+    --chart-4: 25 85% 57%;
+    --chart-5: 280 60% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 150 30% 10%;
+    --sidebar-primary: 145 55% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 145 30% 92%;
+    --sidebar-accent-foreground: 145 55% 25%;
+    --sidebar-border: 90 15% 88%;
+    --sidebar-ring: 145 55% 36%;
+  }
+
+  .dark {
+    --background: 150 20% 7%;
+    --foreground: 90 15% 95%;
+    --card: 150 20% 10%;
+    --card-foreground: 90 15% 95%;
+    --popover: 150 20% 10%;
+    --popover-foreground: 90 15% 95%;
+    --primary: 145 55% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 80% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 150 15% 15%;
+    --muted-foreground: 90 10% 60%;
+    --accent: 145 30% 18%;
+    --accent-foreground: 145 40% 75%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 150 15% 18%;
+    --input: 150 15% 18%;
+    --ring: 145 55% 42%;
+    --chart-1: 145 55% 42%;
+    --chart-2: 42 80% 55%;
+    --chart-3: 200 65% 55%;
+    --chart-4: 25 80% 60%;
+    --chart-5: 280 55% 60%;
+    --sidebar-background: 150 20% 10%;
+    --sidebar-foreground: 90 15% 95%;
+    --sidebar-primary: 145 55% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 145 30% 18%;
+    --sidebar-accent-foreground: 145 40% 75%;
+    --sidebar-border: 150 15% 18%;
+    --sidebar-ring: 145 55% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    overscroll-behavior-y: none;
+  }
+}
+
+@layer utilities {
+  /* Safe-area helpers for native WebView execution (notches / home indicator) */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  .no-select {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+}

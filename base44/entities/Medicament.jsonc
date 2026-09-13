@@ -1,0 +1,87 @@
+{
+  "name": "Medicament",
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string",
+      "description": "Nom du m\u00e9dicament ou vaccin"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "vaccin",
+        "antibiotique",
+        "antiparasitaire",
+        "vitamines",
+        "desinfectant",
+        "autre"
+      ],
+      "description": "Type de produit"
+    },
+    "quantite": {
+      "type": "number",
+      "description": "Quantit\u00e9 en stock (doses ou unit\u00e9s)"
+    },
+    "unite": {
+      "type": "string",
+      "enum": [
+        "doses",
+        "ml",
+        "g",
+        "kg",
+        "flacons",
+        "sachets"
+      ],
+      "default": "doses",
+      "description": "Unit\u00e9 de mesure"
+    },
+    "seuil_alerte": {
+      "type": "number",
+      "description": "Seuil d'alerte stock bas"
+    },
+    "prix_unitaire": {
+      "type": "number",
+      "description": "Prix unitaire en FCFA"
+    },
+    "date_achat": {
+      "type": "string",
+      "format": "date",
+      "description": "Date d'achat du m\u00e9dicament"
+    },
+    "date_expiration": {
+      "type": "string",
+      "format": "date",
+      "description": "Date d'expiration"
+    },
+    "fournisseur": {
+      "type": "string",
+      "description": "Fournisseur"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false,
+      "description": "Archiv\u00e9"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nom",
+    "type"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

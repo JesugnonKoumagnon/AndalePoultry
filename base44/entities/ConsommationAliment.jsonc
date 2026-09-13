@@ -1,0 +1,45 @@
+{
+  "name": "ConsommationAliment",
+  "type": "object",
+  "properties": {
+    "bande_id": {
+      "type": "string",
+      "description": "ID de la bande"
+    },
+    "aliment_id": {
+      "type": "string",
+      "description": "ID de l'aliment"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "quantite_kg": {
+      "type": "number",
+      "description": "Quantit\u00e9 consomm\u00e9e en kg"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "bande_id",
+    "aliment_id",
+    "date",
+    "quantite_kg"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

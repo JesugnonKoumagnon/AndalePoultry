@@ -1,0 +1,76 @@
+{
+  "name": "Annonce",
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string",
+      "enum": [
+        "oeufs",
+        "poulet_chair",
+        "autre"
+      ],
+      "description": "Type de produit"
+    },
+    "titre": {
+      "type": "string",
+      "description": "Titre de l'annonce"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description optionnelle"
+    },
+    "quantite": {
+      "type": "number",
+      "description": "Quantit\u00e9 disponible"
+    },
+    "unite": {
+      "type": "string",
+      "enum": [
+        "plateau",
+        "piece",
+        "kg"
+      ],
+      "description": "Unit\u00e9"
+    },
+    "prix_unitaire": {
+      "type": "number",
+      "description": "Prix unitaire"
+    },
+    "devise": {
+      "type": "string",
+      "default": "FCFA"
+    },
+    "ville": {
+      "type": "string"
+    },
+    "pays": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string",
+      "description": "Num\u00e9ro WhatsApp"
+    },
+    "nom_ferme": {
+      "type": "string",
+      "description": "Nom de la ferme"
+    }
+  },
+  "required": [
+    "produit",
+    "titre",
+    "quantite",
+    "unite"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": null,
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

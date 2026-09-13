@@ -1,0 +1,77 @@
+{
+  "name": "Transaction",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "revenu",
+        "depense"
+      ],
+      "description": "Type de transaction"
+    },
+    "categorie": {
+      "type": "string",
+      "enum": [
+        "vente_volaille",
+        "vente_oeufs",
+        "vente_fumier",
+        "achat_aliment",
+        "achat_poussins",
+        "medicaments",
+        "main_oeuvre",
+        "equipement",
+        "transport",
+        "electricite_eau",
+        "autre"
+      ],
+      "description": "Cat\u00e9gorie de la transaction"
+    },
+    "montant": {
+      "type": "number",
+      "description": "Montant en FCFA"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "bande_id": {
+      "type": "string",
+      "description": "ID de la bande associ\u00e9e (optionnel)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description de la transaction"
+    },
+    "mode_paiement": {
+      "type": "string",
+      "enum": [
+        "especes",
+        "mobile_money",
+        "virement",
+        "cheque"
+      ],
+      "default": "especes"
+    }
+  },
+  "required": [
+    "type",
+    "categorie",
+    "montant",
+    "date"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

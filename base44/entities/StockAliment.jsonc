@@ -1,0 +1,71 @@
+{
+  "name": "StockAliment",
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string",
+      "description": "Nom de l'aliment (ex: Poussini\u00e8re, Croissance, Finition)"
+    },
+    "type_aliment": {
+      "type": "string",
+      "enum": [
+        "demarrage",
+        "croissance",
+        "finition",
+        "pondeuse",
+        "premix",
+        "autre"
+      ],
+      "description": "Type d'aliment"
+    },
+    "quantite_kg": {
+      "type": "number",
+      "description": "Quantit\u00e9 en stock (kg)"
+    },
+    "seuil_alerte_kg": {
+      "type": "number",
+      "description": "Seuil d'alerte de stock bas (kg)"
+    },
+    "capacite_max_kg": {
+      "type": "number",
+      "description": "Capacit\u00e9 maximale de stockage (kg), utilis\u00e9e pour la barre de progression"
+    },
+    "prix_par_kg": {
+      "type": "number",
+      "description": "Prix par kg en FCFA"
+    },
+    "fournisseur": {
+      "type": "string",
+      "description": "Nom du fournisseur"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false,
+      "description": "Archiv\u00e9"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Description optionnelle de l'aliment"
+    }
+  },
+  "required": [
+    "nom",
+    "type_aliment",
+    "quantite_kg"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

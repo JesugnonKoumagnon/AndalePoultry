@@ -1,0 +1,61 @@
+{
+  "name": "TraitementSanitaire",
+  "type": "object",
+  "properties": {
+    "bande_id": {
+      "type": "string",
+      "description": "ID de la bande trait\u00e9e"
+    },
+    "medicament_id": {
+      "type": "string",
+      "description": "ID du m\u00e9dicament utilis\u00e9"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date du traitement"
+    },
+    "quantite_utilisee": {
+      "type": "number",
+      "description": "Quantit\u00e9 utilis\u00e9e"
+    },
+    "motif": {
+      "type": "string",
+      "enum": [
+        "vaccination",
+        "traitement_maladie",
+        "prevention",
+        "deworming",
+        "autre"
+      ],
+      "description": "Motif du traitement"
+    },
+    "prochain_rappel": {
+      "type": "string",
+      "format": "date",
+      "description": "Date du prochain rappel"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "bande_id",
+    "date",
+    "motif"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}
