@@ -272,7 +272,7 @@ export default function Comptabilite() {
     wsBandes["!cols"] = [{ wch: 20 }, { wch: 14 }, { wch: 16 }, { wch: 16 }, { wch: 14 }, { wch: 12 }];
     XLSX.utils.book_append_sheet(wb, wsBandes, "Bandes");
 
-    XLSX.writeFile(wb, `AgriVolaille_Bilan_${monthLabel.replace(/\s/g, "_")}_${new Date().toISOString().split("T")[0]}.xlsx`);
+    XLSX.writeFile(wb, `AndalePoultry_Bilan_${monthLabel.replace(/\s/g, "_")}_${new Date().toISOString().split("T")[0]}.xlsx`);
   };
 
   const exportCSV = () => {

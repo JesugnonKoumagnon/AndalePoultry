@@ -10,7 +10,7 @@ export default function ChatMessageBubble({ message }) {
         <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0 overflow-hidden">
           <img
             src="https://media.base44.com/images/public/69ea01df3b955495df5e6ec6/b604aaadb_image.png"
-            alt="AgriVolaille"
+            alt="Andale Poultry"
             className="w-full h-full object-contain"
           />
         </div>

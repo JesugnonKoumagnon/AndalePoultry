@@ -55,16 +55,16 @@ export default function Sidebar({ collapsed, onToggle }) {
           className="flex items-center gap-2.5">
           <img
             src="https://media.base44.com/images/public/69ea01df3b955495df5e6ec6/b604aaadb_image.png"
-            alt="AgriVolaille"
+            alt="Andale Poultry"
             className="w-9 h-9 object-contain rounded-md"
           />
-          <span className="font-heading font-extrabold text-xl text-[hsl(var(--primary))] tracking-tight">AgriVolaille</span>
+          <span className="font-heading font-extrabold text-xl text-[hsl(var(--primary))] tracking-tight">Andale Poultry</span>
         </motion.div>
         }
         {collapsed &&
         <img
           src="https://media.base44.com/images/public/69ea01df3b955495df5e6ec6/b604aaadb_image.png"
-          alt="AgriVolaille"
+          alt="Andale Poultry"
           className="w-9 h-9 object-contain mx-auto"
         />
         }

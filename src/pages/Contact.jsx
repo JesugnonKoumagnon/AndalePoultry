@@ -15,8 +15,8 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     await base44.integrations.Core.SendEmail({
-      to: "contact@agrivolaille.com",
-      subject: `Message de ${form.nom} — AgriVolaille`,
+      to: "contact@andalepoultry.com",
+      subject: `Message de ${form.nom} — Andale Poultry`,
       body: `Nom : ${form.nom}\nEmail : ${form.email}\n\n${form.message}`,
     });
     setSent(true);
@@ -33,7 +33,7 @@ export default function Contact() {
           <div className="p-3 rounded-xl bg-primary/10">
             <Bird className="w-8 h-8 text-primary" />
           </div>
-          <span className="font-heading font-extrabold text-2xl text-primary">AgriVolaille</span>
+          <span className="font-heading font-extrabold text-2xl text-primary">Andale Poultry</span>
         </div>
 
         <h1 className="text-4xl font-heading font-bold tracking-tight">Contactez-nous</h1>
@@ -41,8 +41,8 @@ export default function Contact() {
 
         <div className="flex items-center gap-3 rounded-xl border bg-card p-4">
           <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-          <a href="mailto:contact@agrivolaille.com" className="text-primary font-medium hover:underline">
-            contact@agrivolaille.com
+          <a href="mailto:contact@andalepoultry.com" className="text-primary font-medium hover:underline">
+            contact@andalepoultry.com
           </a>
         </div>
 

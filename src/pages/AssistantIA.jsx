@@ -243,7 +243,7 @@ export default function AssistantIA() {
               <div className="h-full flex flex-col items-center justify-center text-center gap-4 py-10">
                 <img
                   src="https://media.base44.com/images/public/69ea01df3b955495df5e6ec6/b604aaadb_image.png"
-                  alt="AgriVolaille"
+                  alt="Andale Poultry"
                   className="w-14 h-14 object-contain rounded-xl"
                 />
                 <div>

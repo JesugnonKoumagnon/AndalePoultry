@@ -32,7 +32,7 @@ const IMAGE_PROMPTS = {
 };
 
 function buildShareText(a, t) {
-  const ferme = a.nom_ferme || "AgriVolaille";
+  const ferme = a.nom_ferme || "Andale Poultry";
   const lieu = [a.ville, a.pays].filter(Boolean).join(", ") || t("boutique.share.locationFallback");
   const titre = a.produit === "autre"
     ? t("boutique.share.introDefault", { titre: (a.titre || "").toUpperCase() })
@@ -105,7 +105,7 @@ function ShareMenu({ annonce, imageUrl }) {
   const { toast } = useToast();
   const text = buildShareText(annonce, t);
   const encodedText = encodeURIComponent(text);
-  const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://agrivolaille.app")}&quote=${encodedText}`;
+  const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://andalepoultry.app")}&quote=${encodedText}`;
   const tiktokUrl = `https://www.tiktok.com/upload`;
   const whatsappShareUrl = annonce.whatsapp
     ? `https://wa.me/${annonce.whatsapp.replace(/\D/g, "")}?text=${encodedText}`

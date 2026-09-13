@@ -126,7 +126,7 @@ const translations = {
     "settings.deleteBackupNote": "💡 Avant de continuer, vous pouvez exporter une sauvegarde de vos données depuis les pages Bandes et Comptabilité.",
     "settings.deleteAcknowledgeLabel": "Je comprends que cette action est définitive et irréversible.",
     "settings.deleteConfirmButton": "Oui, supprimer mon compte",
-    "settings.deleteEmailSubject": "Demande de suppression de compte AgriVolaille",
+    "settings.deleteEmailSubject": "Demande de suppression de compte Andale Poultry",
     "settings.deleteEmailBody": "Une demande de suppression du compte associé à l'adresse {email} a été soumise. Votre compte et toutes les données associées seront supprimés sous peu.",
     "settings.deleteSubmittedTitle": "Demande envoyée",
     "settings.deleteSubmittedDesc": "Votre demande de suppression a été enregistrée. Vous allez être déconnecté.",
@@ -516,8 +516,8 @@ const translations = {
     "conso.form.date": "Date",
     "conso.form.notes": "Notes",
     // Boutique
-    "boutique.title": "Ma Boutique AgriVolaille",
-    "boutique.description": "Vos annonces visibles par tous les acheteurs sur AgriVolaille Market",
+    "boutique.title": "Ma Boutique Andale Poultry",
+    "boutique.description": "Vos annonces visibles par tous les acheteurs sur Andale Poultry Market",
     "boutique.newAd": "Nouvelle annonce",
     "boutique.editAd": "Modifier l'annonce",
     "boutique.product": "Produit",
@@ -545,9 +545,9 @@ const translations = {
     "boutique.preview.qtyAvailable": "Quantité disponible",
     "boutique.preview.unitPrice": "Prix unitaire",
     "boutique.publish": "Publier l'annonce",
-    "boutique.verifiedFarm": "Ferme Vérifiée AgriVolaille",
+    "boutique.verifiedFarm": "Ferme Vérifiée Andale Poultry",
     "boutique.empty.title": "Votre boutique est vide",
-    "boutique.empty.desc": "Publiez votre première annonce pour être visible sur AgriVolaille Market",
+    "boutique.empty.desc": "Publiez votre première annonce pour être visible sur Andale Poultry Market",
     "boutique.menuEdit": "Modifier",
     "boutique.menuDelete": "Supprimer",
     "boutique.qtyShort": "Qté",
@@ -569,7 +569,7 @@ const translations = {
     "boutique.share.locationLabel": "📍 {lieu}",
     "boutique.share.contactWhatsApp": "📞 Contact WhatsApp : {wa}",
     "boutique.share.beforeStockout": "Profitez-en avant rupture de stock !",
-    "boutique.share.viaApp": "Publié via AgriVolaille 🌾",
+    "boutique.share.viaApp": "Publié via Andale Poultry 🌾",
     "boutique.share.intro.oeufs": "🥚 ŒUFS FRAIS DISPONIBLES !",
     "boutique.share.intro.poulet_chair": "🐔 POULET CHAIR FRAIS DISPONIBLE !",
     "boutique.share.introDefault": "📦 {titre} !",
@@ -578,7 +578,7 @@ const translations = {
     "rapport.popupBlocked": "Veuillez autoriser les popups pour générer le rapport.",
     "rapport.print": "🖨️ Imprimer / Enregistrer en PDF",
     "rapport.sheetTitle": "Rapport Mensuel — {period}",
-    "rapport.generatedSubtitle": "AgriVolaille · Généré le {date}",
+    "rapport.generatedSubtitle": "Andale Poultry · Généré le {date}",
     "rapport.revenues": "Revenus",
     "rapport.expenses": "Dépenses",
     "rapport.netBalanceEmoji": "Solde net {emoji}",
@@ -609,7 +609,7 @@ const translations = {
     "rapport.statusCompleted": "Terminée",
     "rapport.statusPlanned": "Planifiée",
     "rapport.noFlocks": "Aucune bande enregistrée",
-    "rapport.footer": "AgriVolaille — Rapport généré le {date}",
+    "rapport.footer": "Andale Poultry — Rapport généré le {date}",
     // Feed form
     "feed.form.editTitle": "Modifier l'aliment",
     "feed.form.newTitle": "Nouvel aliment",
@@ -646,7 +646,7 @@ const translations = {
     "stock.consumption": "− Consommation",
     "stock.initialKg": "/ {n} kg seuil",
     // Assistant
-    "assistant.title": "Assistant AgriVolaille",
+    "assistant.title": "Assistant Andale Poultry",
     "assistant.description": "Optimisez la consommation alimentaire de vos bandes et posez toutes vos questions sur la ferme",
     "assistant.conversations": "Conversations",
     "assistant.myConversations": "Mes conversations",
@@ -793,7 +793,7 @@ const translations = {
     "settings.deleteBackupNote": "💡 Before proceeding, you may export a backup of your data from the Flocks and Accounting pages.",
     "settings.deleteAcknowledgeLabel": "I understand this action is permanent and cannot be undone.",
     "settings.deleteConfirmButton": "Yes, delete my account",
-    "settings.deleteEmailSubject": "AgriVolaille account deletion request",
+    "settings.deleteEmailSubject": "Andale Poultry account deletion request",
     "settings.deleteEmailBody": "A deletion request for the account associated with {email} has been submitted. Your account and all associated data will be deleted shortly.",
     "settings.deleteSubmittedTitle": "Request sent",
     "settings.deleteSubmittedDesc": "Your deletion request has been recorded. You will now be logged out.",
@@ -1183,8 +1183,8 @@ const translations = {
     "conso.form.date": "Date",
     "conso.form.notes": "Notes",
     // Boutique
-    "boutique.title": "My AgriVolaille Shop",
-    "boutique.description": "Your listings visible to all buyers on AgriVolaille Market",
+    "boutique.title": "My Andale Poultry Shop",
+    "boutique.description": "Your listings visible to all buyers on Andale Poultry Market",
     "boutique.newAd": "New listing",
     "boutique.editAd": "Edit listing",
     "boutique.product": "Product",
@@ -1212,9 +1212,9 @@ const translations = {
     "boutique.preview.qtyAvailable": "Available quantity",
     "boutique.preview.unitPrice": "Unit price",
     "boutique.publish": "Publish listing",
-    "boutique.verifiedFarm": "AgriVolaille Verified Farm",
+    "boutique.verifiedFarm": "Andale Poultry Verified Farm",
     "boutique.empty.title": "Your shop is empty",
-    "boutique.empty.desc": "Publish your first listing to be visible on AgriVolaille Market",
+    "boutique.empty.desc": "Publish your first listing to be visible on Andale Poultry Market",
     "boutique.menuEdit": "Edit",
     "boutique.menuDelete": "Delete",
     "boutique.qtyShort": "Qty",
@@ -1236,7 +1236,7 @@ const translations = {
     "boutique.share.locationLabel": "📍 {lieu}",
     "boutique.share.contactWhatsApp": "📞 WhatsApp contact: {wa}",
     "boutique.share.beforeStockout": "Hurry, before stock runs out!",
-    "boutique.share.viaApp": "Published via AgriVolaille 🌾",
+    "boutique.share.viaApp": "Published via Andale Poultry 🌾",
     "boutique.share.intro.oeufs": "🥚 FRESH EGGS AVAILABLE!",
     "boutique.share.intro.poulet_chair": "🐔 FRESH BROILER AVAILABLE!",
     "boutique.share.introDefault": "📦 {titre}!",
@@ -1245,7 +1245,7 @@ const translations = {
     "rapport.popupBlocked": "Please allow pop-ups to generate the report.",
     "rapport.print": "🖨️ Print / Save as PDF",
     "rapport.sheetTitle": "Monthly Report — {period}",
-    "rapport.generatedSubtitle": "AgriVolaille · Generated on {date}",
+    "rapport.generatedSubtitle": "Andale Poultry · Generated on {date}",
     "rapport.revenues": "Revenue",
     "rapport.expenses": "Expenses",
     "rapport.netBalanceEmoji": "Net balance {emoji}",
@@ -1276,7 +1276,7 @@ const translations = {
     "rapport.statusCompleted": "Completed",
     "rapport.statusPlanned": "Planned",
     "rapport.noFlocks": "No flocks recorded",
-    "rapport.footer": "AgriVolaille — Report generated on {date}",
+    "rapport.footer": "Andale Poultry — Report generated on {date}",
     // Feed form
     "feed.form.editTitle": "Edit feed",
     "feed.form.newTitle": "New feed",
@@ -1313,7 +1313,7 @@ const translations = {
     "stock.consumption": "− Consumption",
     "stock.initialKg": "/ {n} kg threshold",
     // Assistant
-    "assistant.title": "AgriVolaille Assistant",
+    "assistant.title": "Andale Poultry Assistant",
     "assistant.description": "Optimize your flocks' feed consumption and ask any question about your farm",
     "assistant.conversations": "Conversations",
     "assistant.myConversations": "My conversations",
@@ -1340,11 +1340,11 @@ const translations = {
 const LanguageContext = createContext(null);
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(() => localStorage.getItem("agrivolaille_lang") || "fr");
+  const [lang, setLang] = useState(() => localStorage.getItem("andale_poultry_lang") || "fr");
 
   const changeLang = (newLang) => {
     setLang(newLang);
-    localStorage.setItem("agrivolaille_lang", newLang);
+    localStorage.setItem("andale_poultry_lang", newLang);
   };
 
   const t = (key, params) => {
