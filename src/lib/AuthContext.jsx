@@ -26,7 +26,13 @@ export const AuthProvider = ({ children }) => {
       // First, check app public settings (with token if available)
       // This will tell us if auth is required, user not registered, etc.
       const appClient = createAxiosClient({
-        baseURL: `/api/apps/public`,
+        // Must point at the real Base44 backend (appParams.appBaseUrl), not a
+        // same-origin relative path — when this app is self-hosted (GitHub
+        // Pages, etc.) a relative baseURL resolves against this site's own
+        // domain, which has no /api routes and 404s, silently breaking the
+        // app-state/auth check on every load (see base44Client.js for the
+        // same fix applied to the main SDK client).
+        baseURL: `${appParams.appBaseUrl || ''}/api/apps/public`,
         headers: {
           'X-App-Id': appParams.appId
         },
